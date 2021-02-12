@@ -1,0 +1,61 @@
+*{  margin: 0;
+    box-sizing: border-box;
+}
+
+header{background-color: transparent;
+    grid-area:header;
+    overflow: hidden;
+    background-color:#ff914d;
+    padding:2vw;
+
+}
+
+nav{background-color:#ffbd59;
+    grid-area: nav;
+}
+
+footer{padding:1%;
+    text-align:center;
+    background-color:#ff914d;
+    grid-area:footer;
+}
+
+
+/* PAGINA CONTATO - CUSTOMIZAÇÃO */
+form{background-color: #ffbd59;
+    display:grid;
+    justify-items:center;
+}
+
+input{padding: 6px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+input:focus{
+    border-color: red;
+    box-shadow:0 0 10px 0 orange;
+}
+
+textarea{background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 15vw
+    resize: vertical;;
+    
+}
+
+textarea:focus{
+    border-color: red;
+    box-shadow:0 0 10px 0 orange;
+}
+
+input[type=submit] {
+    color: Black;
+    padding: 8px;
+    background-color: #fca36a;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+input[type=submit]:hover {background-color: #ff914d;
+}
