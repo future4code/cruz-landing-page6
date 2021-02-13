@@ -1,18 +1,19 @@
-body {
+htm, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .container {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20vh 1fr 1fr 15vh;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 5vh 1fr 1fr 5fr 15vw;
 }
 
 /*Inicio estilização do topo*/
@@ -57,15 +58,16 @@ nav {
 
 .navegacao {
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    margin-top: 2%;
+    padding: 0;
+    
 
 }
 
 .navegacao ul {
     padding: 0;
     margin: 0;
-    padding-inline-start: 0;
 }
 
 .navegacao li {
@@ -74,7 +76,8 @@ nav {
     height: 50px;
     text-align: center;
     border-radius: 100px;
-
+    box-shadow: none;
+    
 }
 
 .navegacao a {
@@ -85,26 +88,28 @@ nav {
 }
 
 .navegacao a:hover {
+    color: white;
     font: bold;
     font-size: 20px;
-    text-decoration: underline;
-    text-decoration-color: #ffbd59;
-
+    text-shadow: 3px -4px 5px #fcd28e;
 }
 
 /**Fim da Estilização do topo**/
 
-/*Inicio da estilização do conteudo*/
+/*Inicio da estilização do Main:
+Atalhos e mensagem ao usuário*/
 
 main {
     display: grid;
     grid-column: 1/6;
-    grid-row: 2/3;
+    grid-row: 2/5;
 }
 
 h1 {
     text-align: center;
     color: #ff6509;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 
@@ -117,15 +122,19 @@ h1 {
 }
 
 #atalho ul {
+    margin: 0;
+    padding: 0;
     width: 100%;
     display: inline-flex;
     justify-content: space-around;
+
 
 }
 
 #atalho li {
     height: 200px;
     width: 200px;
+    border-radius: 20px;
 
 }
 
@@ -179,4 +188,82 @@ h1 {
     margin: 5px;
     text-decoration: none;
 
+}
+
+#mensagem{
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #ffbd59;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    text-shadow: 2px 2px 3px #ff6200;
+}
+p{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0;
+
+}
+
+.destaque {
+    margin-top: 0;
+    color: #ff6000;
+    text-shadow: 2px 2px 1px white;
+    font-size: 300%
+}
+
+/*Estilização dos perfis dos funcionários*/
+
+
+
+.section{
+    margin-top: 5%;
+    padding-left: 5%;
+    width: 90%;
+    height: 100%;
+    display: inline-flex;
+    box-shadow: 4px 10px 5px #ffbd59;
+}
+
+h2{
+    font-size: 30px;
+    color:#ff6200;
+    text-shadow: 5px 5px 5px #ff914d;
+}
+h3{
+    margin: 0;
+    font-size: 16px;
+}
+.info{
+    width: 20%;
+    height: 100%;
+
+}
+
+.funcao{
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+}
+
+ul{
+    display: inline-flex;
+
+}
+li{
+    margin-inline: 10px;
+    height: 100%;
+    width: 150px;
+    box-shadow: 5px 5px 5px #ff6000;
+    text-align: center;
+}
+
+/**Fim do Main**/
+/*Inicio do  footer*/
+footer{
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 5/6;
 }
