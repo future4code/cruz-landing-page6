@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh 1fr 1fr 15vh;
+}
+
+/*Inicio estilização do topo*/
+.topo {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    background-color: #ff914d;
+    justify-content: space-between;
+}
+
+header {
+    margin: 0;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 80px;
+    width: 200px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#identidade {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    transform: translate(-5%, -35%);
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-column: 2/6;
+
+}
+
+.navegacao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navegacao ul {
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.navegacao li {
+    margin: 0;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100px;
+
+}
+
+.navegacao a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.navegacao a:hover {
+    font: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #ffbd59;
+
+}
+
+/**Fim da Estilização do topo**/
+

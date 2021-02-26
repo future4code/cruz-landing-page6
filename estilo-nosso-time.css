@@ -1,0 +1,271 @@
+htm, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 5vh 1fr 1fr 5fr 15vw;
+}
+
+/*Inicio estilização do topo*/
+.topo {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    background-color: #ff914d;
+    justify-content: space-between;
+}
+
+header {
+    margin: 0;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 80px;
+    width: 200px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#identidade {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    transform: translate(-5%, -35%);
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-column: 2/6;
+
+}
+
+.navegacao {
+    width: 100%;
+    display:flex;
+    margin-top: 2%;
+    padding: 0;
+    
+
+}
+
+.navegacao ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navegacao li {
+    margin: 0;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: none;
+    
+}
+
+.navegacao a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.navegacao a:hover {
+    color: white;
+    font: bold;
+    font-size: 20px;
+    text-shadow: 3px -4px 5px #fcd28e;
+}
+
+/**Fim da Estilização do topo**/
+
+/*Inicio da estilização do Main:
+Atalhos e mensagem ao usuário*/
+
+main {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 2/5;
+}
+
+h1 {
+    text-align: center;
+    color: #ff6509;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+#atalho {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+
+}
+
+#atalho ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+
+
+}
+
+#atalho li {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+
+}
+
+#voce {
+    background-image: url(images/family-moving-and-using-boxes.jpg);
+    background-size: 190%;
+    background-position-x: 80%;
+    background-position-y: 60%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    box-shadow: 10px 10px 2px #ffbd59;
+
+}
+
+
+#empresa {
+    background-image: url(images/two-diverse-business-colleagues-discussing-project.jpg);
+    background-size: 150%;
+    background-position-x: 70%;
+    background-position-y: 40%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    box-shadow: 10px 10px 2px #ffbd59;
+
+}
+
+#geral {
+    background-image: url(images/confident-youngsters-studying-posing.jpg);
+    background-size: 150%;
+    background-position-x: 40%;
+    background-position-y: 80%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    box-shadow: 10px 10px 2px #ffbd59;
+
+}
+
+#atalho a {
+    color: white;
+    text-shadow: 2px 3px 4px #ff6000;
+    font-size: 40px;
+    margin: 5px;
+    text-decoration: none;
+
+}
+
+#mensagem{
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #ffbd59;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    text-shadow: 2px 2px 3px #ff6200;
+}
+p{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0;
+
+}
+
+.destaque {
+    margin-top: 0;
+    color: #ff6000;
+    text-shadow: 2px 2px 1px white;
+    font-size: 300%
+}
+
+/*Estilização dos perfis dos funcionários*/
+
+
+
+.section{
+    margin-top: 5%;
+    padding-left: 5%;
+    width: 90%;
+    height: 100%;
+    display: inline-flex;
+    box-shadow: 4px 10px 5px #ffbd59;
+}
+
+h2{
+    font-size: 30px;
+    color:#ff6200;
+    text-shadow: 5px 5px 5px #ff914d;
+}
+h3{
+    margin: 0;
+    font-size: 16px;
+}
+.info{
+    width: 20%;
+    height: 100%;
+
+}
+
+.funcao{
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+}
+
+ul{
+    display: inline-flex;
+
+}
+li{
+    margin-inline: 10px;
+    height: 100%;
+    width: 150px;
+    box-shadow: 5px 5px 5px #ff6000;
+    text-align: center;
+}
+
+/**Fim do Main**/
+/*Inicio do  footer*/
+footer{
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 3/4;
+}
+
+
